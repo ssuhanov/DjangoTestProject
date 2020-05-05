@@ -1,0 +1,7 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+    <h2 class="text-info">{{article.title}}</h2>
+    <h6 class="text-info">Posted: {{article.date|date:"d.m.Y \a\t H:i:s"}}</h6>
+    <p>{{article.body|safe|linebreaks}}</p>
+{% endblock %}
